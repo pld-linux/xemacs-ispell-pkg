@@ -1,0 +1,14 @@
+diff -Nru xemacs-ispell-pkg-1.21/man/ispell/ispell.texi xemacs-ispell-pkg-1.21.new/man/ispell/ispell.texi
+--- xemacs-ispell-pkg-1.21/man/ispell/ispell.texi	Thu Feb 26 17:52:06 1998
++++ xemacs-ispell-pkg-1.21.new/man/ispell/ispell.texi	Fri Dec 22 04:01:02 2000
+@@ -2,8 +2,9 @@
+ @comment %**start of header (This is for running Texinfo on a region.)
+ @setfilename ispell.info
+ @settitle ISPELL V3.1
++@dircategory XEmacs Editor:
+ @direntry
+-* Ispell::      Interactive spelling corrector.
++* Ispell::				Interactive spelling corrector
+ @end direntry
+ @comment %**end of header (This is for running Texinfo on a region.)
+ 
