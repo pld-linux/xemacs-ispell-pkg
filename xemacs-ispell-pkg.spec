@@ -14,6 +14,7 @@ Patch1:		%{name}-xml.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
+BuildRequires:	xemacs
 Requires:	xemacs
 Requires:	ispell
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
