@@ -12,13 +12,11 @@ URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
 Requires:	xemacs
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 
-
 %description -l pl 
-
 
 %prep
 %setup -q -c
