@@ -3,7 +3,7 @@ Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.26
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
