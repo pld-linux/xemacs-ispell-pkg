@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Interactive spelling corrector with GNU ispell.
 
 %description -l pl 
-Interakcyiny korektor pisowni u¿ywaj±cy GNU ispell-a.
+Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a.
 
 %prep
 %setup -q -c
