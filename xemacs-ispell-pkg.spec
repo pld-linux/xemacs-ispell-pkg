@@ -1,5 +1,5 @@
 Summary:	Interactive spelling corrector with GNU ispell
-Summary(pl):	Interakcyiny korektor pisowni u¿ywaj±cy GNU ispell-a
+Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.24
