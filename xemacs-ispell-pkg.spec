@@ -1,5 +1,5 @@
-Summary:	Interactive spelling corrector with GNU ispell
-Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a
+Summary:	Interactive spelling corrector with ispell
+Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy ispella
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.26
@@ -11,18 +11,19 @@ Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-xml.patch
 URL:		http://www.xemacs.org/
-BuildArch:	noarch
-Conflicts:	xemacs-sumo
+BuildRequires:	texinfo
 BuildRequires:	xemacs
-Requires:	xemacs
 Requires:	ispell
+Requires:	xemacs
+Conflicts:	xemacs-sumo
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Interactive spelling corrector with GNU ispell.
+Interactive spelling corrector with ispell.
 
 %description -l pl
-Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a.
+Interakcyjny korektor pisowni u¿ywaj±cy ispella.
 
 %prep
 %setup -q -c
