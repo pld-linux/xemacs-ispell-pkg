@@ -2,7 +2,7 @@ Summary:	Spell-checking with GNU ispell
 Summary(pl):	Spell-checking with GNU ispell
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
-Version:	1.18
+Version:	1.21
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
