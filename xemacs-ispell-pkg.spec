@@ -16,7 +16,7 @@ Release:	1
 %define		NoInfo True
 
 ### Preamble
-Copyright:	GPL
+License:	GPL
 Group:    	Applications/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 URL:      	http://www.xemacs.org
