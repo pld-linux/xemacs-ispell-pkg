@@ -2,8 +2,8 @@ Summary:	Interactive spelling corrector with GNU ispell
 Summary(pl):	Interakcyiny korektor pisowni u¿ywaj±cy GNU ispell-a
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
-Version:	1.22
-Release:	3
+Version:	1.23
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Group(de):	Applikationen/Editors/Emacs
