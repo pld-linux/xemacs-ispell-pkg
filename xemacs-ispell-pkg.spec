@@ -37,8 +37,6 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/ispell/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -47,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ispell/ChangeLog.gz
+%doc lisp/ispell/ChangeLog
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
