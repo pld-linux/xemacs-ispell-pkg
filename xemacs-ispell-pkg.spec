@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interactive spelling corrector with GNU ispell.
 
-%description -l pl 
+%description -l pl
 Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a.
 
 %prep
@@ -28,7 +28,7 @@ Interakcyjny korektor pisowni u¿ywaj±cy GNU ispell-a.
 %patch0 -p1
 %patch1 -p1
 
-%build                                                      
+%build
 xemacs -batch -q -no-site-file -f batch-byte-compile lisp/ispell/ispell.el
 
 %install
@@ -37,13 +37,13 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/ispell/ChangeLog 
+gzip -9nf lisp/ispell/ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/ispell/ChangeLog.gz 
+%doc lisp/ispell/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
