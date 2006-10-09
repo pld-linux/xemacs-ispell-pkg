@@ -2,12 +2,12 @@ Summary:	Interactive spelling corrector with ispell
 Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy ispella
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
-Version:	1.26
-Release:	2
+Version:	1.32
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	85a9da0fe8ed41199388b5f41a0f7769
+# Source0-md5:	0eceb13fd90b388f744f04bbf83fe4a1
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-xml.patch
 URL:		http://www.xemacs.org/
