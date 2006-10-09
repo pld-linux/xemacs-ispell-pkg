@@ -1,16 +1,16 @@
 diff -Nur --exclude *~ xemacs-ispell-pkg-1.22/lisp/ispell/ispell.el xemacs-ispell-pkg-1.22.new/lisp/ispell/ispell.el
 --- xemacs-ispell-pkg-1.22/lisp/ispell/ispell.el	Fri Oct 27 18:43:54 2000
 +++ xemacs-ispell-pkg-1.22.new/lisp/ispell/ispell.el	Sun Mar 25 12:49:13 2001
-@@ -2881,10 +2881,10 @@
+@@ -3393,10 +3393,10 @@
  	(if (not (eq ispell-parser 'tex))
  	    (set (make-local-variable 'ispell-parser) 'tex)))
-     (process-send-string ispell-process "-\n"))	; set mode to normal (nroff)
+     (ispell-send-string "-\n"))		; set mode to normal (nroff)
 -  ;; If needed, test for SGML & HTML modes and set a buffer local nil/t value.
 +  ;; If needed, test for SGML & HTML & XML modes and set a buffer local nil/t value.
-   (if (and ispell-skip-sgml (not (eq ispell-skip-sgml t)))
-       (set (make-local-variable 'ispell-skip-sgml)
--	   (not (null (string-match "sgml\\|html"
-+	   (not (null (string-match "sgml\\|html\\|xml"
- 				    (downcase (symbol-name major-mode)))))))
+   (if (and ispell-skip-html (not (eq ispell-skip-html t)))
+       (setq ispell-skip-html
+-	    (not (null (string-match "sgml\\|html"
++	    (not (null (string-match "sgml\\|html\\|xml"
+ 				     (downcase (symbol-name major-mode)))))))
    ;; Set default extended character mode for given buffer, if any.
    (let ((extended-char-mode (ispell-get-extended-character-mode)))
