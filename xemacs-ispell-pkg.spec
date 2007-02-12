@@ -1,5 +1,5 @@
 Summary:	Interactive spelling corrector with ispell
-Summary(pl.UTF-8):   Interakcyjny korektor pisowni używający ispella
+Summary(pl.UTF-8):	Interakcyjny korektor pisowni używający ispella
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.32
