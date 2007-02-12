@@ -1,5 +1,5 @@
 Summary:	Interactive spelling corrector with ispell
-Summary(pl):	Interakcyjny korektor pisowni u¿ywaj±cy ispella
+Summary(pl.UTF-8):   Interakcyjny korektor pisowni uÅ¼ywajÄ…cy ispella
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.32
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interactive spelling corrector with ispell.
 
-%description -l pl
-Interakcyjny korektor pisowni u¿ywaj±cy ispella.
+%description -l pl.UTF-8
+Interakcyjny korektor pisowni uÅ¼ywajÄ…cy ispella.
 
 %prep
 %setup -q -c
