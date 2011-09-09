@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Interakcyjny korektor pisowni używający ispella
 Name:		xemacs-ispell-pkg
 %define 	srcname	ispell
 Version:	1.32
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
